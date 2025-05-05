@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #0e0e2c;
+    color: #ffffff;
+  }
+  
+  .section {
+    padding: 4rem 1rem;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .col {
+    flex: 1 1 50%;
+    padding: 1rem;
+  }
+  
+  .img_lazy img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .lighter {
+    font-size: 1.125rem;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+  }
+  
+  .getStarted a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff6f3c;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .getStarted a:hover {
+    background-color: #ff8c5a;
+  }
+  
+  #ratings img {
+    display: block;
+    width: 200px;      /* Increased width */
+    height: auto;      /* Automatically scales height */
+    object-fit: contain;
+    margin: 0 auto;    /* Center the image */
+  }
+  
+  
+  #reviewLogos ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    list-style: none;
+  }
+  
+  #reviewLogos li span {
+    background-color: #1e1e3f;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #fff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .col {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .lighter {
+      font-size: 1rem;
+    }
+  }
+  
